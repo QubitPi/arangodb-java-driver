@@ -1,12 +1,20 @@
+![](https://github.com/QubitPi/QubitPi/blob/master/img/arango-logo-with-text.png?raw=true)
+
 # ArangoDB Java driver
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/arangodb/arangodb-java-driver/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/arangodb/arangodb-java-driver/tree/main)
+
+[![Maven Central](https://img.shields.io/maven-central/v/com.arangodb/arangodb-java-driver?style=for-the-badge&logo=apachemaven&logoColor=white&labelColor=4D9FEA&color=brightgreen)](https://maven-badges.herokuapp.com/maven-central/com.arangodb/arangodb-java-driver)
+[![GitHub workflow status badge][GitHub workflow status badge]][GitHub workflow status URL]
+[![Apache License][Apache License Badge]][Apache License, Version 2.0]
 
 The official ArangoDB Java Driver.
 
-- Repository: <https://github.com/arangodb/arangodb-java-driver>
-- [Code examples](https://github.com/arangodb/arangodb-java-driver/tree/main/test-non-functional/src/test/java/example)
+- Repository: <https://github.com/QubitPi/arangodb-java-driver>
+- [Code examples](https://github.com/QubitPi/arangodb-java-driver/tree/main/test-non-functional/src/test/java/example)
 - [Reference](reference-version-7/_index.md) (driver setup, serialization, changes in version 7)
-- [JavaDoc](https://www.javadoc.io/doc/com.arangodb/arangodb-java-driver/latest/index.html) (generated reference documentation)
-- [ChangeLog](https://github.com/arangodb/arangodb-java-driver/blob/main/ChangeLog.md)
+- [JavaDoc] (generated reference documentation)
+- [ChangeLog](https://github.com/QubitPi/arangodb-java-driver/blob/main/ChangeLog.md)
 
 ## Supported versions
 
@@ -339,8 +347,7 @@ Removed document: 6
   query language
 - See [Serialization](reference-version-7/serialization.md) for details about
   user-data serde
-- For the full reference documentation, see
-  [JavaDoc](https://www.javadoc.io/doc/com.arangodb/arangodb-java-driver/latest/index.html)
+- For the full reference documentation, see [JavaDoc]
 
 ## GraalVM Native Image
 
@@ -348,7 +355,7 @@ The driver supports GraalVM Native Image compilation.
 To compile with `--link-at-build-time` when `http-protocol` module is present in
 the classpath, additional substitutions are required for transitive dependencies
 `Netty` and `Vert.x`. See this
-[example](https://github.com/arangodb/arangodb-java-driver/tree/main/test-functional/src/test-default/java/graal)
+[example](https://github.com/QubitPi/arangodb-java-driver/tree/main/test-functional/src/test-default/java/graal)
 for reference. Such substitutions are not required when compiling the shaded driver.
 
 ### Framework compatibility
@@ -472,3 +479,11 @@ and deserialized internally by the driver.
 The behavior to serialize and deserialize these classes is considered an internal
 implementation detail, and as such, it might change without prior notice.
 The API with regard to the public members of these classes is kept compatible.
+
+[Apache License, Version 2.0]: https://www.apache.org/licenses/LICENSE-2.0
+[Apache License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
+
+[GitHub workflow status badge]: https://img.shields.io/github/actions/workflow/status/QubitPi/arangodb-java-driver/ci-cd.yaml?branch=master&style=for-the-badge&logo=github&logoColor=white&label=CI/CD
+[GitHub workflow status URL]: https://github.com/QubitPi/arangodb-java-driver/actions/workflows/ci-cd.yaml
+
+[JavaDoc]: https://arango-java.qubitpi.org/

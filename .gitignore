@@ -12,3 +12,5 @@ test-results-native
 
 dependency-reduced-pom.xml
 /bin/
+
+.DS_Store

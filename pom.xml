@@ -33,6 +33,7 @@
     </licenses>
 
     <properties>
+        <doclint>none</doclint>
         <maven.compiler.target>8</maven.compiler.target>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.release>8</maven.compiler.release>

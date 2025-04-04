@@ -12,6 +12,7 @@ com.arangodb.internal.cursor
 com.arangodb.internal.net
 com.arangodb.internal.serde
 com.arangodb.internal.util
+com.arangodb.jmh_generated
 com.arangodb.model
 com.arangodb.model.arangosearch
 com.arangodb.serde
